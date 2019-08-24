@@ -39,3 +39,19 @@ router.post('/login', (req,res) => {
         res.status(500).json(err)
     })
 })
+
+
+router.get('/logout', restricted, (req,res) => {
+    if(req.session){
+        req.session.destroy((err) => {
+            if(err) {
+                console.log(err);
+                return res.status(500).json({message: "error has occured"})
+            }
+            res.end();
+        });
+    }else{
+        res.end();
+    }
+})
+module.exports = router;
