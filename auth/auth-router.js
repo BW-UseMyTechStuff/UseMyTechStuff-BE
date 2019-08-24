@@ -22,3 +22,20 @@ Users.add(user)
     res.status(500).json(err)
 })
 })
+
+router.post('/login', (req,res) => {
+    let {username, password} = req.body;
+    Users.findBy({username})
+    .first()
+    .then((user) => {
+        if (username && bcrypt.compareSync(password, user.password)){
+            req.session.user = user;
+            res.status(201).json({message: 'Welcome'+ username});
+        }else{
+            res.status(404).json({message:"invalid username or password"})
+        }
+    })
+    .catch((err) => {
+        res.status(500).json(err)
+    })
+})
