@@ -16,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/BW-UseMyTechStuff/UseMyTechStuff-BE/issues"
   },
-  "homepage": "https://github.com/BW-UseMyTechStuff/UseMyTechStuff-BE#readme"
+  "homepage": "https://github.com/BW-UseMyTechStuff/UseMyTechStuff-BE#readme",
+  "dependencies": {
+    "connect-session-knex": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "helmet": "^3.20.0",
+    "knex": "^0.19.2",
+    "postgresql": "0.0.1",
+    "sqlite3": "^4.1.0"
+  }
 }
