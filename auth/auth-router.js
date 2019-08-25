@@ -8,7 +8,7 @@ const restricted = require('./auth-middleware');
 router.post('/register', (req,res) => {
 let user = req.body;
 
-if(!user.usename || !user.password){
+if(!user.username || !user.password){
     res.status(404).json({message: "Please enter a username or password"})
 }
 const hash = bcrypt.hashSync(user.password, 15);
