@@ -8,7 +8,7 @@
 **POST /api/auth/register**</br>
 -Accepts a username and password. Posts it to the db</br>
 **POST /api/auth/login**
--Accepts a previously registered username and password. </br>While logged in it creates a session.
+-Accepts a previously registered username and password. </br>While logged in it creates a session.</br>
 **GET /api/auth/logout**</br>
 -Simple get request. Used to end your session and protect your restricted routes again.</br>
 </br>

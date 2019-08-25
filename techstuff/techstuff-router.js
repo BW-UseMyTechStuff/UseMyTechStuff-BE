@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const restricted = require('')
+const restricted = require('../auth/auth-middleware')
 const Users = require('../users/users-model');
 const Stuff = require('./techstuff-model');
 
