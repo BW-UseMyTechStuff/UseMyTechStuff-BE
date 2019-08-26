@@ -7,6 +7,7 @@ const SessionStore = require('connect-session-knex')(session);
 const authRouter = require('../auth/auth-router.js');
 const usersRouter = require('../users/users-router.js');
 const stuffRouter = require('../techstuff/techstuff-router');
+
 const server = express();
 const sessionConfig = {
 	name: 'bipolarbearv2',
@@ -19,7 +20,7 @@ const sessionConfig = {
 		httpOnly: true
 	},
 	store: new SessionStore({
-		knex: require('../data/dbConfig'),
+		knex: require('../db/db-config'),
 		tablename: 'sessions',
 		sidfieldname: 'sid',
 		createtable: true,
