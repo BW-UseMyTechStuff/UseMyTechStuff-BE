@@ -8,7 +8,7 @@ exports.up = function(knex) {
         stuff.text('description', 4000);
         stuff.text('price', 100).notNullable();
         
-	});
+	}));
 };
 
 exports.down = function(knex, Promise) {

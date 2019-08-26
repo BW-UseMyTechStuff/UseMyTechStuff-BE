@@ -15,6 +15,7 @@ const hash = bcrypt.hashSync(user.password, 15);
 user.password = hash;
 Users.add(user)
 .then((newUser) => {
+    console.log(newUser);
     res.status(201).json(newUser);
 
 })
