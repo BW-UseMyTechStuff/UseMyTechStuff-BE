@@ -1,7 +1,8 @@
 # UseMyTechStuff-BE
 
 
-# Endpoints </br>
+# Base Url</br>
+https://use-my-techstuff.herokuapp.com/</br>
 
 
 # Auth-Routes</br>
