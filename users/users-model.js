@@ -13,16 +13,18 @@ module.exports = {
 };
 
 function find() {
-	return db('users').select('id', 'username', 'password');
+  return db.select('*').from('users');
+//   return db('users').select('id', 'username', 'password');
+// }
 }
-
 function findBy(filter) {
 	return db('users').where(filter);
 }
 
 async function add(user) {
+  console.log(user,"25")
 	const [ id ] = await db('users').insert(user);
-
+console.log(user,"26")
 	return findById(id);
 }
 

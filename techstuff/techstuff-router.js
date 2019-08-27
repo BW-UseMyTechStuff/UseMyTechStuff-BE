@@ -13,7 +13,7 @@ router.get('/items', (req,res) => {
     res.status(404).json(err);
 })
 })
-router.post('/newItem',restricted, (req, res) => {
+router.post('/newItem', (req, res) => {
 const newItem = req.body;
 Stuff.addStuff(newItem)
 .then(item => {
