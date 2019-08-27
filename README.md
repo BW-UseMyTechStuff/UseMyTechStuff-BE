@@ -29,6 +29,8 @@ A get request that gets all the items posted to our database.</br>
 If you want to update an item use this endpoint. It requires an id.</br>
 **POST `https://use-my-techstuff.herokuapp.com/api/techstuff/newItem**`</br>
 posts a new item to the techStuff table </br>
+**POST**`https://use-my-techstuff.herokuapp.com/api/charge`</br>
+This endpoint is to add some credit card functionality to our web app. </br>
 
 
 
