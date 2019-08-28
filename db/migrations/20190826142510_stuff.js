@@ -17,7 +17,7 @@ exports.up = function(knex) {
 		stuff.text('features-5',2000);
 		stuff.text('status',2000);
 		stuff.text('warranty',200);
-		stuff.text('sku-num',2000)
+		stuff.text('sku-num',2000);
 	}));
 };
 
