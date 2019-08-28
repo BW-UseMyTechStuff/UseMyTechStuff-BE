@@ -37,24 +37,24 @@ router.put("/:id", (req, res) => {
       });
   });
 
-  router.post("/img/upload", multerUploads, (req, res) => {
-    if (req.file) {
-      const file = dataUri(req).content;
-      return uploader.upload(file).then(result => {
-        const picture = result.url;
-        return res
-          .status(200)
-          .json({
-            message: "Your image has been uploaded successfully to cloudinary",
-            picture: picture
-          })
-          .catch(err =>
-            res.status(400).json({
-              message: "Something went wrong while processing your request",
-              err: err
-            })
-          );
-      });
-    }
-  })
+  // router.post("/img/upload", multerUploads, (req, res) => {
+  //   if (req.file) {
+  //     const file = dataUri(req).content;
+  //     return uploader.upload(file).then(result => {
+  //       const picture = result.url;
+  //       return res
+  //         .status(200)
+  //         .json({
+  //           message: "Your image has been uploaded successfully to cloudinary",
+  //           picture: picture
+  //         })
+  //         .catch(err =>
+  //           res.status(400).json({
+  //             message: "Something went wrong while processing your request",
+  //             err: err
+  //           })
+  //         );
+  //     });
+  //   }
+  // })
 module.exports = router;
