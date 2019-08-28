@@ -31,7 +31,8 @@ If you want to update an item use this endpoint. It requires an id.</br>
 posts a new item to the techStuff table </br>
 **POST**`https://use-my-techstuff.herokuapp.com/api/charge`</br>
 This endpoint is to add some credit card functionality to our web app. </br>
-
+**Post**`https://use-my-techstuff.herokuapp.com/api/techstuff/img/upload`</br>
+tHis endpoint is shaky but works</br>
 
 
 
