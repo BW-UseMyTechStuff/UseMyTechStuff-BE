@@ -23,11 +23,12 @@ Must be logged in to post a new item to the database.</br>
 </br>
 </br>
 # Techstuff-routes</br>
-**GET `https://use-my-techstuff.herokuapp.com/api/techstuff/items**`</br>
+**GET** `https://use-my-techstuff.herokuapp.com/api/techstuff/items**`</br>
 A get request that gets all the items posted to our database.</br>
-**PUT `https://use-my-techstuff.herokuapp.com/api/techstuff/:id**`</br>
+**PUT** `https://use-my-techstuff.herokuapp.com/api/techstuff/:id**`</br>
 If you want to update an item use this endpoint. It requires an id.</br>
-**POST `https://use-my-techstuff.herokuapp.com/api/techstuff/newItem**`</br>
+
+**POST**`https://use-my-techstuff.herokuapp.com/api/techstuff/newItem**`</br>
 posts a new item to the techStuff table </br>
 **POST**`https://use-my-techstuff.herokuapp.com/api/charge`</br>
 This endpoint is to add some credit card functionality to our web app. </br>

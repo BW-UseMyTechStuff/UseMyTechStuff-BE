@@ -39,7 +39,18 @@ router.put("/:id", (req, res) => {
           .json({ message: "Failed to update" });
       });
   });
-
+  router.delete("/:id", (req, res) => {
+    const { id } = req.params;
+    Tasks.deleteStuff(id)
+      .then(tasks => {
+        res.status(200).json(tasks);
+      })
+      .catch(err => {
+        res
+          .status(500)
+          .json({ message: "Yeet he ded you deleted the delete" });
+      });
+  });
   router.post("/img/upload", (req, res) => {
     if (req.file) {
       const file = dataUri(req).content;

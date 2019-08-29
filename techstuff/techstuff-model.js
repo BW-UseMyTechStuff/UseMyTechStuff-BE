@@ -4,7 +4,8 @@ const db = require("../db/db-config");
 module.exports = {
   getStuff,
   addStuff,
-  updateStuff
+  updateStuff,
+deleteStuff
 };
 
 
@@ -22,3 +23,9 @@ function updateStuff(changes, id) {
     .where({ id });
 }
 
+
+function deleteStuff(id) {
+  return db("stuff")
+    .del()
+    .where({ id });
+}
