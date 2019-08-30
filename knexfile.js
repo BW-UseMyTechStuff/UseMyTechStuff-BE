@@ -20,6 +20,17 @@ module.exports = {
       directory: __dirname + '/db/migrations'
     },
    
+  },
+  testing: {
+    client: 'sqlite3',
+    connection: {
+      filename: './db/test.db3',
+    },
+    useNullAsDefault: true,
+    migrations: {
+      directory: './db/migrations',
+    }
+  
   }
 
 };

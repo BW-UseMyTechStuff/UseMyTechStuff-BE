@@ -41,7 +41,7 @@ router.put("/:id", (req, res) => {
   });
   router.delete("/:id", (req, res) => {
     const { id } = req.params;
-    Tasks.deleteStuff(id)
+    Stuff.deleteStuff(id)
       .then(tasks => {
         res.status(200).json(tasks);
       })
