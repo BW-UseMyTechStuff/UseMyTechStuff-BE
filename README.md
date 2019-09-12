@@ -22,13 +22,13 @@
 ## Install
 
 ```sh
-npm run server
+npm i
 ```
 
 ## Usage
 
 ```sh
-npm run start
+npm run server || nodemon
 ```
 
 ## Run tests
