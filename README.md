@@ -11,7 +11,7 @@
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
   </a>
   <a href="https://twitter.com/brybrythecodingguy">
-    <img alt="Twitter: brybrythecodingguy" src="https://img.shields.io/twitter/follow/brybrythecodingguy.svg?style=social" target="_blank" />
+    <img alt="Twitter: brybrythecoderguy" src="https://img.shields.io/twitter/follow/brybrythecodingguy.svg?style=social" target="_blank" />
   </a>
 </p>
 
