@@ -35,7 +35,7 @@
     "dotenv": "^8.1.0",
     "env": "0.0.2",
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
+    "express-handlebars": "^5.3.1",
     "express-session": "^1.16.2",
     "helmet": "^3.20.0",
     "jest": "^24.9.0",
